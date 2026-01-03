@@ -23,7 +23,7 @@ export default function Page() {
               and begin setting up your profile.
             </p>
 
-            <SignUp fallbackRedirectUrl="/dashboard" />
+            <SignUp />
           </div>
         </div>
       </div>

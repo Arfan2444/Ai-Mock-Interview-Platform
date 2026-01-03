@@ -37,6 +37,13 @@ function Feedback({ params }) {
     <div>
       <h2 className="text-2xl font-bold text-green-400">Congratulations!</h2>
       <h2 className="font-bold text-2xl">Here is your interview feedback:</h2>
+
+      {feedbackList?.length === 0 && (
+        <h2 className="text-red-500 my-5">
+          No feedback available for this interview.
+        </h2>
+      )}
+
       <h2 className="text-amber-400 text-lg my-3">
         Your overall interview rating: <strong>85%</strong>
       </h2>
