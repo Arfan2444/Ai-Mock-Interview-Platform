@@ -31,10 +31,12 @@ function InterviewList() {
     <div>
       <h2 className="font-medium text-2xl">Previous Interview List</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {interviewList &&
-          interviewList.map((interview, index) => {
-            <InterviewItemCard key={index} interview={interview} />;
-          })}
+        {interviewList.map((interview, index) => (
+          <InterviewItemCard
+            key={interview.id ?? index}
+            interview={interview}
+          />
+        ))}
       </div>
     </div>
   );
