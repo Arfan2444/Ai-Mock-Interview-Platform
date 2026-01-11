@@ -104,7 +104,7 @@ function Feedback({ params }) {
                   Overall Interview Result
                 </h2>
 
-                <p className="text-3xl font-bold mt-1">{overallRating}%</p>
+                <p className="text-3xl font-bold mt-1">2%</p>
 
                 <h3 className="font-semibold mt-3">{summary.title}</h3>
 
